@@ -7,10 +7,10 @@ USE bamazon;
 CREATE TABLE products (
     id int NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (id),
-    product_name VARCHAR(30),
-    department_name VARCHAR(30),
-    price INTEGER(30),
-    stock_quantity INTEGER(30)
+    product_name VARCHAR(30) NULL,
+    department_name VARCHAR(30) NULL,
+    price INTEGER(30) NULL,
+    stock_quantity INT NULL
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
